@@ -1,7 +1,10 @@
 
 # Code Supplement: Psychopathology of worthlessness in depression
 
-This git repository contains R code to reproduce analyses from the paper "The psychopathology of worthlessness in depression" currently under review for publication. (citation details to be added later)
+This git repository contains R code to reproduce analyses from the paper:
+
+Harrison P, Lawrence AJ, Wang S, Liu S, Xie G, Yang X, Zahn R. The Psychopathology of Worthlessness in Depression. Front Psychiatry. 2022 May 19;13:818542. doi: 10.3389/fpsyt.2022.818542. PMID: 35664464; PMCID: PMC9160466.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9160466/
 
 This code release was tested with R version 4.1.2, bootnet version 1.5, and NetworkComparisonTest version 2.2.1. Full information is provided in `sessionInfo.txt`.
 
@@ -19,6 +22,8 @@ Note: `01_make_networks.R` is very time consuming due to bootstrap and permutati
 Required libraries are specified at the top of each script and should be installed with their dependencies prior to running the analysis.
 
 Scripts use relative paths and so assume that R's working directory will be set to the repository folder which contains all scripts and the given directory structure.
+
+The script option variable `niter_opt` should be set to a low number (e.g. 10) to ensure libraries are installed correctly. To replicate the paper results use `niter_opt <- 10000`.
 
 ## Scripts
 The first script reads data from two csv files in the `input/` folder and writes out 
