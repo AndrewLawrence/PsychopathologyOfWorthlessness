@@ -6,7 +6,7 @@ library(NetworkComparisonTest)
 
 # Number of cores to use:
 core_opt <- 3
-# Number of iterations:
+# Number of iterations (10 to test, 10000 to match paper):
 niter_opt <- 10 #10000
 # Tuning parameter:
 gamma_opt <- 0.25
